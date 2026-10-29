@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Global Music Frontier｜全球音乐前沿观察——每周独立音乐期刊。">
+  <title>Global Music Frontier｜全球音乐前沿观察</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#/" aria-label="返回首页">
+      <span class="brand-mark">GMF</span>
+      <span class="brand-name"><b>Global Music Frontier</b><small>全球音乐前沿观察</small></span>
+    </a>
+    <button class="search-toggle" id="searchToggle" type="button" aria-label="打开搜索">⌕ <span>搜索</span></button>
+  </header>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <label for="searchInput">搜索期刊、音乐家、专辑或风格</label>
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="例如：爵士、Josh Johnson、电子声学…" autocomplete="off">
+      <button id="searchClose" type="button">关闭</button>
+    </div>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <p>GLOBAL MUSIC FRONTIER <span>／</span> 全球音乐前沿观察</p>
+    <p>每周一期，在这里阅读；在 ChatGPT 对话中继续讨论。</p>
+  </footer>
+  <script src="content/issues.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
